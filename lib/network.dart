@@ -50,14 +50,29 @@ abstract class Cache {
 
 // repository class if data is in DB use it if not fetch and store data to DB
 class Repository {
-  NewsApiProvider apiProvider = NewsApiProvider();
-  Future fetchTopIds() => apiProvider.fetchTopId();
+  List<Source> sources = <Source>[
+    NewsApiProvider(),
+    // NewsDBProvider(), don't create multiple instances of DB
+  ];
+
+  List<Cache> caches = <Cache>[
+    // NewsDBProvider(), don't create multiple instances of DB
+  ];
+
+  // when DB provider also need top ids iterate over sources
+  Future<List<int>> fetchTopIds() => sources[0].fetchTopId();
 
   Future<NewsModel> fetchItem(int id) async {
-    // check for item in DB if yes return item
-    // if not
-    var item = await apiProvider.fetchItemFromId(id);
-    // add item to db
+    NewsModel item;
+    Source source;
+    for (source in sources) {
+      item = await source.fetchItemFromId(id);
+      if (item != null) break;
+    }
+// cache data to db
+    for (final cache in caches) {
+      cache.adItem();
+    }
     return item;
   }
 }
