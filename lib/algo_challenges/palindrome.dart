@@ -8,12 +8,50 @@
 //   palindrome("abcdefg") === false
 //
 void main() {
-  palindrome('12345');
+  palindrome('abba');
+  palindromeInteger(13);
 }
 
 // Solution 1
-bool palindrome(String str) {
+bool palindrome3(String str) {
   final String reversedStr =
       str.split('').reduce((current, next) => next + current);
   return str == reversedStr;
+}
+
+// Solution 2
+bool palindrome(String str) {
+  bool isPalindrome;
+  for (var i = 0; i < str.length; i++) {
+    final lastChar = str[str.length - 1 - i];
+    final char = str[i];
+
+    if (lastChar != char) {
+      isPalindrome = false;
+      break;
+    } else {
+      isPalindrome = true;
+    }
+  }
+  return isPalindrome;
+}
+
+// Solution to reverse an integer
+bool palindromeInteger(int number) {
+  int n = number;
+  int rev = 0;
+  bool isPalindrome;
+
+  while (n != 0) {
+    final remainder = n % 10;
+    rev = rev * 10 + remainder;
+    n ~/= 10;
+  }
+  if (number != rev) {
+    isPalindrome = false;
+  } else {
+    isPalindrome = true;
+  }
+
+  return isPalindrome;
 }
