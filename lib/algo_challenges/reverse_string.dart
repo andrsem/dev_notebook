@@ -29,3 +29,6 @@ String reverse3(String str) {
   }
   return reversedString;
 }
+
+// Solution 4
+String reverse4(String str) => str.split('').reduce((rev, char) => char + rev);
