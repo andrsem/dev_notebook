@@ -11,11 +11,10 @@ void main() {
 
 String reverse(String str) {
   final list = <String>[];
-  String newString;
   for (var i = 0; i < str.length; i++) {
     list.add(str[i]);
   }
-  newString = list.reversed.join();
-  print(newString);
-  return newString;
+  return list.reversed.join();
 }
+
+String reverse2(String str) => str.split('').reversed.join();
