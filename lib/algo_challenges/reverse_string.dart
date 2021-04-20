@@ -20,3 +20,12 @@ String reverse(String str) {
 
 // Solution 2
 String reverse2(String str) => str.split('').reversed.join();
+
+// Solution 3
+String reverse3(String str) {
+  String reversedString = '';
+  for (var i = 0; i < str.length; i++) {
+    reversedString = str[i] + reversedString;
+  }
+  return reversedString;
+}
