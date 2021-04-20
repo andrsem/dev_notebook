@@ -9,6 +9,7 @@ void main() {
   reverse('world');
 }
 
+// Solution 1
 String reverse(String str) {
   final list = <String>[];
   for (var i = 0; i < str.length; i++) {
@@ -17,4 +18,5 @@ String reverse(String str) {
   return list.reversed.join();
 }
 
+// Solution 2
 String reverse2(String str) => str.split('').reversed.join();
