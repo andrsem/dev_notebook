@@ -1,6 +1,20 @@
 // spread operator in collections adds elements of collection in new collection, it is like collection extracts its values and then add them to new collection
 void main() {
-  print(colors);
+  const bananas = 5;
+  const apples = 6;
+  const grains = {
+    'pasta': '500g',
+    'rice': '1kg',
+  };
+  const addGrains = true;
+  final shoppingList = <String, dynamic>{
+    if (bananas > 0) 'bananas': bananas,
+    if (apples > 0) 'apples': apples,
+    if (addGrains) ...grains
+  };
+
+  print(shoppingList);
+  // prints {bananas: 5, apples: 6, pasta: 500g, rice: 1kg}
 }
 
 final colors = [
