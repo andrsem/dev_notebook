@@ -6,10 +6,9 @@
 // --- Examples:
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
-//
+
 void main() {
   palindrome('abba');
-  palindromeInteger(13);
 }
 
 // Solution 1
@@ -33,25 +32,5 @@ bool palindrome(String str) {
       isPalindrome = true;
     }
   }
-  return isPalindrome;
-}
-
-// Solution to reverse an integer
-bool palindromeInteger(int number) {
-  int n = number;
-  int rev = 0;
-  bool isPalindrome;
-
-  while (n != 0) {
-    final remainder = n % 10;
-    rev = rev * 10 + remainder;
-    n ~/= 10;
-  }
-  if (number != rev) {
-    isPalindrome = false;
-  } else {
-    isPalindrome = true;
-  }
-
   return isPalindrome;
 }

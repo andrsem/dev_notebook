@@ -29,16 +29,4 @@ void main() {
   test('"pennep" a palindrome', () {
     expect(palindrome('pennep'), true);
   });
-
-  test('12321 is a palindrome', () {
-    expect(palindromeInteger(12321), true);
-  });
-
-  test('1 is a palindrome', () {
-    expect(palindromeInteger(1), true);
-  });
-
-  test('1232 is a not palindrome', () {
-    expect(palindromeInteger(1232), false);
-  });
 }
