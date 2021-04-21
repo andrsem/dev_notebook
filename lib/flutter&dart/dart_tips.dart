@@ -33,3 +33,12 @@ final restaurant = <String, dynamic>{
     'isPopular': true,
   },
 };
+
+// ----------Copying collections------------
+// when we assign a collection to a new collection we make a new reference to the same collection
+// Create a reference
+final list = [1, 2, 3];
+final newReference = list;
+
+// Create a copy of list
+final copy = [...list];
