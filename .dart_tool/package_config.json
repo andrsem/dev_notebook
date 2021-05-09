@@ -3,25 +3,25 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-20.0.0",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-21.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/analyzer-1.4.0",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/analyzer-1.5.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "args",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/args-2.0.0",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/args-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "async",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/async-2.5.0",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/async-2.6.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -74,6 +74,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "frontend_server_client",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/frontend_server_client-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "glob",
       "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/glob-2.0.1",
       "packageUri": "lib/",
@@ -81,7 +87,7 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/http-0.13.1",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/http-0.13.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -171,7 +177,7 @@
     },
     {
       "name": "shelf",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/shelf-1.1.0",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/shelf-1.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -237,19 +243,19 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/test-1.16.8",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/test-1.17.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/test_api-0.3.0",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/test_core-0.3.19",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/test_core-0.3.23",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -273,7 +279,7 @@
     },
     {
       "name": "web_socket_channel",
-      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-2.0.0",
+      "rootUri": "file:///home/andrsem/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -296,7 +302,7 @@
       "languageVersion": "2.10"
     }
   ],
-  "generated": "2021-04-19T05:45:01.317456Z",
+  "generated": "2021-05-09T17:20:30.221779Z",
   "generator": "pub",
-  "generatorVersion": "2.14.0-8.0.dev"
+  "generatorVersion": "2.14.0-74.0.dev"
 }
