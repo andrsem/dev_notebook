@@ -44,6 +44,7 @@ abstract class Source {
 }
 
 // cache data to DB
+// ignore: one_member_abstracts
 abstract class Cache {
   void adItem();
 }

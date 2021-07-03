@@ -1,5 +1,5 @@
 List<T> where<T>(List<T> items, bool Function(T) f) {
-  var result = <T>[];
+  final result = <T>[];
   for (final item in items) {
     if (f(item)) {
       result.add(item);
