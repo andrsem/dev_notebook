@@ -11,3 +11,5 @@ dependencies:
 
 dev_dependencies:
   test: ^1.17.10
+  flutter_linter:
+    git: https://github.com/andrsem/flutter_linter

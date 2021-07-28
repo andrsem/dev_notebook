@@ -5,6 +5,9 @@ class Stack<T> {
 }
 
 void main() {
-  final Stack stack = Stack<int>()..push(3)..push(4)..push(6);
+  final Stack<int> stack = Stack<int>()
+    ..push(3)
+    ..push(4)
+    ..push(6);
   print(stack.pop());
 }

@@ -8,13 +8,12 @@ import 'dart:convert';
 import 'package:http/http.dart' show Client;
 
 class NewsModel {
-  final String title;
-  final int id;
-
-// named constructor
   NewsModel.fromJson(Map<String, dynamic> parsedJson)
       : title = parsedJson['title'] as String,
         id = parsedJson['id'] as int;
+
+  final String title;
+  final int id;
 }
 
 const _url = 'https://hacker-news.firebaseio.com/v0';

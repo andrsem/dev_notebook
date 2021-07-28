@@ -92,6 +92,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.1.2"
+  flutter_linter:
+    dependency: "direct dev"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: e3b2b2f8022c5b54ccb1ad6359ce073c0b3bd761
+      url: "https://github.com/andrsem/flutter_linter"
+    source: git
+    version: "0.0.2"
   frontend_server_client:
     dependency: transitive
     description:
