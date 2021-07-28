@@ -3,25 +3,25 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/_fe_analyzer_shared-22.0.0",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/_fe_analyzer_shared-23.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/analyzer-1.7.0",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/analyzer-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "args",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/args-2.1.1",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/args-2.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "async",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/async-2.7.0",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/async-2.8.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -39,7 +39,7 @@
     },
     {
       "name": "cli_util",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/cli_util-0.3.1",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/cli_util-0.3.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -111,7 +111,7 @@
     },
     {
       "name": "io",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/io-1.0.0",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/io-1.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -135,7 +135,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/meta-1.6.0",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/meta-1.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -183,7 +183,7 @@
     },
     {
       "name": "shelf",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/shelf-1.1.4",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/shelf-1.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -195,7 +195,7 @@
     },
     {
       "name": "shelf_static",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/shelf_static-1.0.0",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/shelf_static-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -249,19 +249,19 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test-1.17.9",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test-1.17.10",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_api-0.4.1",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_api-0.4.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_core-0.3.29",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/test_core-0.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -273,7 +273,7 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/vm_service-7.1.0",
+      "rootUri": "file:///C:/Users/andri/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/vm_service-7.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -308,7 +308,7 @@
       "languageVersion": "2.10"
     }
   ],
-  "generated": "2021-07-03T05:19:48.871157Z",
+  "generated": "2021-07-27T09:23:37.117037Z",
   "generator": "pub",
-  "generatorVersion": "2.14.0-271.0.dev"
+  "generatorVersion": "2.14.0-354.0.dev"
 }
