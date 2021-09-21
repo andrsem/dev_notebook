@@ -127,3 +127,30 @@ static void geek(String name)
  // code to be executed...
 }
 ```
+
+## Coupling
+
+Is a degree of interdependence between software classes or methods
+
+- a measure of how closely connected two classes or two methods are
+- the strength of the relationship between classes
+  
+### Low / loose coupling
+
+Small dependencies between classes or methods. Easier to change code without introducing bugs in other classes or methods
+
+### Tight coupling
+
+Two classes or methods are closely connected. A change in one module may affect another module
+
+## Cohesion
+
+Refers to what the class or method can do
+
+### Low cohesion
+
+Class does a great variety of actions. It is broad, unfocused on what it should do
+
+### High cohesion
+
+Class is focused on what it should be doing. It contains only methods relating to the intention of the class
