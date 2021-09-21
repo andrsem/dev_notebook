@@ -8,5 +8,6 @@
         "leppa",
         "pennep",
         "topstories"
-    ]
+    ],
+    "python.formatting.provider": "black"
 }
