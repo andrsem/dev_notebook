@@ -45,7 +45,85 @@
 
 Any entity that has state and behavior. An Actual thing built from a class
 
-- An object can be defined as an instance of a class
-- An object contains an address and takes up some space in memory
+- can be defined as an instance of a class
+- contains an address and takes up some space in memory
 
 Objects can communicate without knowing the details of each other's data or code
+
+## Class
+
+A class can be defined as a blueprint from which you can create an individual object
+
+- Class doesn't consume any space
+
+### Class anatomy
+
+- properties or attributes
+- methods
+- constructors
+
+Property/attribute is a variable associated with a class
+A method is a function associated with a class
+
+### Class vs Instance variable
+
+#### Instance variable
+
+It is a class variable without a static modifier and is usually shared by all class instances
+
+- across different objects, these variables can have different values
+- it is tied to a particular object instance of a class, therefore, the contents of the instance variable are independent of one object instance to others
+
+```java
+class Taxes  
+{  
+   int count;  
+   //...  
+}  
+```
+
+#### Class variable
+
+It is a static variable that can be declared anywhere at class level with static
+
+- across different objects, these variables can have only one value
+- it is not tied to any particular object of the class, therefore, can share across all objects of the class
+
+```java
+class Taxes  
+{  
+  static int count;  
+   //...  
+}  
+```
+
+### Class vs Instance method
+
+#### Instance method
+
+Requires an object of its class to be created before it can be called. To invoke the instance method, we have to create an object of the class where this method is defined.
+
+- it can access instance variables.
+- it can be overridden
+
+```java
+void geek(String name)
+{
+ // code to be executed...
+}
+```
+
+#### Class method
+
+It can be called without creating an object of a class. It is referenced by the class name itself
+
+- all methods declared with static
+- can not be overridden
+- shared among all objects created from the same class
+
+```java
+static void geek(String name)
+{
+ // code to be executed...
+}
+```
