@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:dev_notebook/flutter&dart/network.dart';
+import 'package:dev_notebook/flutter_dart/network.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
 import 'package:test/test.dart';

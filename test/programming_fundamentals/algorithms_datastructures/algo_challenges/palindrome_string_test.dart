@@ -1,4 +1,4 @@
-import 'package:dev_notebook/algo_challenges/palindrome_string.dart';
+import 'package:dev_notebook/programming_fundamentals/algorithms_datastructures/algo_challenges/palindrome_string.dart';
 import 'package:test/test.dart';
 
 void main() {
