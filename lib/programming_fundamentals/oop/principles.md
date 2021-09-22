@@ -1,6 +1,8 @@
-# SOLID Principles
+# Software Principles
 
-## Single Responsibility Principle SRP
+## SOLID Principles
+
+### Single Responsibility Principle SRP
 
 - cohesion
 - single focus
@@ -13,7 +15,7 @@ Every class should have responsibility for a single part of the functionality pr
 
 SRP is about limiting the impact of change by designing [loosely coupled](../../oop/fundamental_oop_concepts.md#coupling) classes that are [highly cohesive](../../oop/fundamental_oop_concepts.md#cohesion)
 
-## Open Closed Principle
+### Open Closed Principle
 
 Classes and methods should be open for extension and closed for modification. The general idea of OCP is to write the code in such a manner, that you will be able to add new functionality without changing the existing code
 
@@ -27,7 +29,7 @@ Open closed principle summarizes goals of ISP and LSP
 - ISP segregates the interface. Keeps the class closed for further modifications
 - LSP assures that subclasses are extensions of a superclass. Creates classes that  are open for extension
 
-## Liskov Substitution Principle LSP
+### Liskov Substitution Principle LSP
 
 Objects of a superclass can be replaceable with objects of its subclasses without breaking the application. Subtype objects can replace supertype objects without affecting functionality inherited from a supertype
 
@@ -41,7 +43,7 @@ An overridden method of a subclass needs to accept the same input parameter valu
 - the return value of a method of the superclass needs to comply with the same rules as the superclass methods return value
 - to follow LSP the subclass must enhance functionality, but not reduce the functionality
 
-## Interface Segregation Principle ISP
+### Interface Segregation Principle ISP
 
 Clients should not be forced to depend upon interfaces that they do not use
 
@@ -50,7 +52,7 @@ Clients should not be forced to depend upon interfaces that they do not use
 
 The goal of the ISP is to reduce the side effects and frequency of required changes by splitting the software into multiple, independent parts. Design an interface based on clients needs
 
-## Dependency Inversion Principle
+### Dependency Inversion Principle
 
 The goal is to reduce dependencies on concrete class. Depend on abstractions
 
@@ -59,3 +61,11 @@ The goal is to reduce dependencies on concrete class. Depend on abstractions
 - details should depend upon abstractions
 - high-level classes must not depend on low-level classes
 - both high-level and low-level classes should depend upon abstraction
+
+## KISS Keep It Simple, Stupid
+
+Most systems work best when they are kept simple rather than making them complex. So when you are writing code your solution should not be complicated that makes a lot of time and effort to understand. If your code is simple to other developers. So always try to simplify your code using different approaches like breaking complex problem into smaller chunks or takin out some unnecessary code you have written
+
+## DRY Don't Repeat Yourself
+
+The goal is to reduce the repetition of code. It states that a piece of code should be implemented in just one place in the source code. You can create a common function or abstract your code to avoid repetition
