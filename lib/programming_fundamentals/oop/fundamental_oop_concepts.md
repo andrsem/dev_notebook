@@ -25,8 +25,23 @@
 
 ## Inheritance
 
+- is relationship
+
  Inheritance is the principle when one object acquires all the properties and behaviours of a parent object
  The subclass inherits properties and methods from its parent superclass. It provides code reusability.
+
+ Types of inheritance:
+
+- Single inheritance, subclasses inherit the feature of one superclass
+- <img src="./images/single_inheritance.png"  width="200"/>
+- Multilevel inheritance, a derived class will be inheriting a base class and as well as the derived class act as the base class to other class
+- <img src="./images/multilevel_inheritance.png" width="200"/>
+- Hierarchical inheritance, one class serves as a superclass (base class) for more than one class
+- <img src="./images/hierarchical_inheritance.png" width="200"/>
+- Multiple inheritance, one class can have more than one superclass and inherit features from all parent classes. We can achieve this through interfaces
+- <img src="./images/multiple_inheritance.png" width="200"/>
+- Hybrid inheritance (through interfaces)
+- <img src="./images/hybrid_inheritance.png" width="200"/>
 
 ## Polymorphism
 
@@ -41,6 +56,54 @@
  Static polymorphism occurs during compile-time
  It's when multiple methods with the same name but different arguments are defined in the same class. This is method overloading. In Dart, every method must have a unique name. There is no method overloading in dart
 
+## Coupling
+
+Is a degree of interdependence between software classes or methods. It arises when classes are aware of each other.
+
+- a measure of how closely connected two classes or two methods are
+- the strength of the relationship between classes
+  
+### Low / loose coupling
+
+Small dependencies between classes or methods. Easier to change code without introducing bugs in other classes or methods
+
+### Tight coupling
+
+Two classes or methods are closely connected. A change in one module may affect another module
+
+## Cohesion
+
+Refers to what the class or method can do
+
+### Low cohesion
+
+Class does a great variety of actions. It is broad, unfocused on what it should do
+
+### High cohesion
+
+Class is focused on what it should be doing. It contains only methods relating to the intention of the class
+
+## Association
+
+Represents the relationship between the objects. Here an object can be associated with one object or many objects. Association can be unidirectional or bidirectional There can be four types of association between the objects:
+
+- one to one
+- one to many
+- many to one
+- many to many
+
+## Aggregation
+
+Is a way to achieve Association. It represents the relationship where one object contains other object as a part of its state. It represents weak relationship between objects
+
+## Composition
+
+- has relationship
+
+Is also a way to achieve association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object.
+
+It is the state where containing objects do not have an independent existence. If you delete the parent object all the child objects will be deleted automatically.
+
 ## Object
 
 Any entity that has state and behavior. An Actual thing built from a class
@@ -52,7 +115,7 @@ Objects can communicate without knowing the details of each other's data or code
 
 ## Class
 
-A class can be defined as a blueprint from which you can create an individual object
+A class can be defined as a blueprint from which you can create an individual object. It represents a set of properties and methods that are common to all objects of one type.
 
 - Class doesn't consume any space
 
@@ -61,9 +124,6 @@ A class can be defined as a blueprint from which you can create an individual ob
 - properties or attributes
 - methods
 - constructors
-
-Property/attribute is a variable associated with a class
-A method is a function associated with a class
 
 ### Class vs Instance variable
 
@@ -127,30 +187,3 @@ static void geek(String name)
  // code to be executed...
 }
 ```
-
-## Coupling
-
-Is a degree of interdependence between software classes or methods
-
-- a measure of how closely connected two classes or two methods are
-- the strength of the relationship between classes
-  
-### Low / loose coupling
-
-Small dependencies between classes or methods. Easier to change code without introducing bugs in other classes or methods
-
-### Tight coupling
-
-Two classes or methods are closely connected. A change in one module may affect another module
-
-## Cohesion
-
-Refers to what the class or method can do
-
-### Low cohesion
-
-Class does a great variety of actions. It is broad, unfocused on what it should do
-
-### High cohesion
-
-Class is focused on what it should be doing. It contains only methods relating to the intention of the class
