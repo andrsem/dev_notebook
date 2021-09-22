@@ -5,7 +5,7 @@
 - cohesion
 - single focus
 
-Every class should have responsibility over a single part of the functionality provided by the software
+Every class should have responsibility for a single part of the functionality provided by the software
 
 - the responsibility should be entirely encapsulated by the class
 - all its methods should be narrowly aligned with that responsibility
@@ -15,7 +15,7 @@ SRP is about limiting the impact of change by designing [loosely coupled](../../
 
 ## Open Closed Principle
 
-Classes and methods should be open for extension and closed for modification. General idea of OCP is to write the code in such manner, that you will be able to add new functionality without changing the existing code
+Classes and methods should be open for extension and closed for modification. The general idea of OCP is to write the code in such a manner, that you will be able to add new functionality without changing the existing code
 
 - prevents situations in which a change to one of your classes also requires you to adopt all depending changes
 - reduces [tight coupling](../../oop/fundamental_oop_concepts.md#coupling)
@@ -29,7 +29,7 @@ Open closed principle summarizes goals of ISP and LSP
 
 ## Liskov Substitution Principle LSP
 
-Objects of a superclass can be replaceable with objects of its subclasses without breaking the application. Subtype objects can replace supertype objects without affecting functionality inherited from supertype
+Objects of a superclass can be replaceable with objects of its subclasses without breaking the application. Subtype objects can replace supertype objects without affecting functionality inherited from a supertype
 
 - requires the objects of your subclasses to behave in the same way as the objects of your superclass
 - every subclass should be able to replace its superclass
@@ -39,7 +39,7 @@ An overridden method of a subclass needs to accept the same input parameter valu
 
 - do not implement any stricter validation rules on input parameters that are implemented by the parent class
 - the return value of a method of the superclass needs to comply with the same rules as the superclass methods return value
-- in order to follow LSP the subclass must enhance functionality, but not reduce functionality
+- to follow LSP the subclass must enhance functionality, but not reduce the functionality
 
 ## Interface Segregation Principle ISP
 
@@ -52,7 +52,7 @@ The goal of the ISP is to reduce the side effects and frequency of required chan
 
 ## Dependency Inversion Principle
 
-The goal is to reduce dependencies on concrete class. Depend on abstraction
+The goal is to reduce dependencies on concrete class. Depend on abstractions
 
 - entities must depend on abstractions and not on concretions
 - abstractions should not depend upon details
