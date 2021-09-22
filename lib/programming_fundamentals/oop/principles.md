@@ -69,3 +69,36 @@ Most systems work best when they are kept simple rather than making them complex
 ## DRY Don't Repeat Yourself
 
 The goal is to reduce the repetition of code. It states that a piece of code should be implemented in just one place in the source code. You can create a common function or abstract your code to avoid repetition
+
+## YAGNI You Aren’t Gonna Need It
+
+Don't implement something until its necessary. Because in most of the cases you are not going to use that piece of code in future. Avoid this and save a lot of time and effort
+
+## SoC Separation of Concerns
+
+Partition a complicated application into different sections or domains. Each section or domain addresses separate concern or has a specific job. Each section is independent of each other - it becomes easier to maintain, update and reuse code
+
+## Avoid Premature Optimisation
+
+You don't need to optimize an algorithm at early stage of development. Requirements may change and possibly this optimised algorithm is no longer needed
+
+## Law of Demeter
+
+Also known as principle of leas knowledge. This principle divides the responsibility between classes or different units
+
+- each unit should have only limited knowledge about others units: only units "closely" related to the current unit
+- each unit should only talk to its friends. Don't talk to strangers
+- only talk to your immediate friends
+
+## Composition Over Inheritance
+
+Objects with complex behaviours should contain instances of objects with individual behaviors. They should not inherit a class and add new behaviours
+
+Issues with [inheritance](fundamental_oop_concepts.md#inheritance):
+
+- inheritance hierarchy can get messy in a hurry
+- less flexible for defining special-case behaviours
+
+Composition programming is cleaner to write, easier to maintain and allows for flexibility defining behaviour
+
+## Programming to an Interface
