@@ -1,4 +1,13 @@
-# Software Principles
+# Design Principles
+
+Software design is the most important phase of the software development life cycle. Thinking about how to structure code before you start writing it as critical
+
+Changes and updates always happen when creating software. The cost of this changes are determined based on the structure and architecture of the system.
+
+- the more time you put into designing a resilient and flexible architecture, the more time will save in the future when changes arise
+- good design, plans and makes it easier to add new features and handle changing requirements
+
+Regression - something was working and after some time someone changed something and this stops working
 
 ## SOLID Principles
 
@@ -102,3 +111,31 @@ Issues with [inheritance](fundamental_oop_concepts.md#inheritance):
 Composition programming is cleaner to write, easier to maintain and allows for flexibility defining behaviour
 
 ## Programming to an Interface
+
+//TODO!
+
+## Dependency Injection
+
+DI is providing the object that an object needs instead of having it construct them itself
+
+- it allows the creation of dependent objects outside of a class and provides those objects to a class through different ways:
+
+1. constructor injection
+2. setter injection
+
+A client who wants to call some services should not have to know how to construct those services. Instead, the client delegates to an external code (the injector)
+
+The client is not aware of the injector
+
+The injector passes the services to the client. Services might exist or be constructed by the injector itself
+
+This means the client doesn't need to know about the injector, how to construct the services or even which services it is actually using
+
+The client only needs to know the interfaces of the services
+
+- if class creates an instance of another class it cannot be used and tested  independently from this class. This is called __hard dependency__
+
+## Code Smells
+
+//TODO watch java design patterns
+//TODO watch lin kedin code smells course

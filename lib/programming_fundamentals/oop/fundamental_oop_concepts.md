@@ -4,10 +4,10 @@
 
  Encapsulation is hiding or wrapping methods and attributes together into a single unit. It is the way to ensure security. It hides the data from the access of outside. Unless we want this behavior using getters and setters
 
- Encapsulation:
-
 - keeps the programmer in control of access to data. Hide internal representation by using private fields
 - setters are great because you can do validation
+- encapsulate the code you expect or suspect to be changed in the future
+- it is easier to test and maintain proper encapsulated code
 
 ## Abstraction
 
@@ -94,11 +94,14 @@ Represents the relationship between the objects. Here an object can be associate
 
 ## Aggregation
 
+- independent. e.g. airplanes at an airport
+
 Is a way to achieve Association. It represents the relationship where one object contains other object as a part of its state. It represents weak relationship between objects
 
 ## Composition
 
 - has relationship
+- cannot exist independent of the parent. e.g. wheels on an airplane
 
 Is also a way to achieve association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object.
 
