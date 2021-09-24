@@ -30,3 +30,7 @@ Sealed classes and interfaces represent restricted class hierarchies that provid
 The same works for sealed interfaces and their implementations: once a module with a sealed interface is compiled, no new implementations can appear
 
 In some sense, sealed classes are similar to enum classes: the set of values for an enum type is also restricted, but each enum constant exist only as a single instance, whereas a subclass of a sealed class can have multiple instances, each with its own state
+
+## Pattern Matching
+
+A pattern represents the structure of a single value or a composite value. For example, the structure of a tuple (1, 2) is a comma-separated list of two elements. Because patterns represent the structure of a value rather than any one particular value, you can match them with a variety of values. For instance, the pattern (x, y) matches the tuple (1, 2) and any other two-element tuple. In addition to matching a pattern with a value, you can extract part or all of a composite value and bind each part to a constant or variable name
