@@ -122,6 +122,7 @@ DI is providing the object that an object needs instead of having it construct t
 
 1. constructor injection
 2. setter injection
+3. interface injection
 
 A client who wants to call some services should not have to know how to construct those services. Instead, the client delegates to an external code (the injector)
 
@@ -135,7 +136,11 @@ The client only needs to know the interfaces of the services
 
 - if class creates an instance of another class it cannot be used and tested  independently from this class. This is called __hard dependency__
 
+## Service Locators
+
+It's a way to decouple the interface (abstract base class) from a concrete implementation, and at the same time allows to access the concrete implementation from everywhere in your app over the interface
+
 ## Code Smells
 
 //TODO watch java design patterns
-//TODO watch lin kedin code smells course
+//TODO watch linkedin code smells course
