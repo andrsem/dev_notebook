@@ -55,3 +55,12 @@ A successful test suite targets only the essential parts of the production codeb
 - Boilerplate and trivial code: getter/setter, setup wiring, annotations, etc.
 
 To maximize the efficiency of unit testing, your team should write only the tests whose value exceeds their cost
+
+## Types of Testing
+
+- sanity testing - determines if modifications to code have fixed issues without introducing new ones
+- smoke testing - verifies if basic functionalities work or not
+- regression testing - ensures that changes haven't broken existing functionality
+- UI testing - replicates how a user interacts with an application and checks all the system layers
+- performance testing - determines how a system performs under a particular workload
+- API testing - checks the functionality, reliability, performance and security of APIs
