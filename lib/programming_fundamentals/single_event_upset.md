@@ -1,0 +1,3 @@
+# Single-Event Upset
+
+A single-event upset is a change of a binary state in a bit - either from a 0 to a 1, or vice versa - caused by an ionizing particle colliding with a sensitive microelectronic device. This occurs because of a discharge in the storage elements (the memory bits) after a free charge is created by ionization of the particle near the node. Cosmic particles that enter the Earth's atmosphere will collide with atmospheric atoms, leading to a sort of rain of protons and neutrons which can affect electronic devices they contact. While most of the time, the effects are barely noticeable, as the bit affected may not be of huge importance

@@ -1,0 +1,5 @@
+.packages
+.dart_tool/
+*.lock
+.vscode
+.DS_Store
