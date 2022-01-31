@@ -1,4 +1,4 @@
-# Compilers and Interpreters
+# Compilation, Interpretation and Hybrid
 
 ## Compilers
 
@@ -41,3 +41,11 @@ Compilation is basically a conversion of human understandable source code into m
 Interpreters translates source code line by line into machine code. Read line 1, translate line 1, execute line 1...
 
 Source code is send to the user which executes it with interpreter program on the fly
+
+## Intermediate/Hybrid Compile+Interpret
+
+JIT compilation (Just In Time) is Hybrid between normal compilation (AOT ahead of time) and interpretation
+
+1. Compile to intermediate language IL or bytecode
+2. Send to client
+3. Client perform JIT compilation

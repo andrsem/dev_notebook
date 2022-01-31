@@ -63,7 +63,7 @@ class Repository {
   Future<List<int>> fetchTopIds() => sources[0].fetchTopId();
 
   Future<NewsModel> fetchItem(int id) async {
-    NewsModel item;
+    late NewsModel item;
     Source source;
     for (source in sources) {
       item = await source.fetchItemFromId(id);
