@@ -8,7 +8,7 @@ class Node {
 
 class LinkedList {
   LinkedList({this.head});
-  Node head;
+  Node? head;
   int count = 0;
 
   void insert(int val) {
@@ -17,7 +17,7 @@ class LinkedList {
     count++;
   }
 
-  Node find(int val) {
+  Node? find(int val) {
     final item = head;
     while (item != null) {
       if (item.value == val) {

@@ -8,7 +8,7 @@
 //   palindrome("abcdefg") === false
 
 void main() {
-  palindrome('abba');
+  palindrome3('abba');
 }
 
 // Solution 1
@@ -20,7 +20,7 @@ bool palindrome3(String str) {
 
 // Solution 2
 bool palindrome(String str) {
-  bool isPalindrome;
+  bool isPalindrome = false;
   for (var i = 0; i < str.length; i++) {
     final lastChar = str[str.length - 1 - i];
     final char = str[i];
