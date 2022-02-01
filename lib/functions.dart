@@ -1,6 +1,6 @@
 import 'dart:math';
 
-String _formatBytes(int bytes, {int decimals = 2}) {
+String formatBytes(int bytes, {int decimals = 2}) {
   if (bytes <= 0) {
     return '0 MB';
   }
@@ -12,4 +12,3 @@ String _formatBytes(int bytes, {int decimals = 2}) {
 
   return '$number $unit';
 }
-

@@ -15,7 +15,7 @@
 
  Applying abstraction means that each object should only expose a high-level mechanism for using it
 
- This is very important when working on a program incrementally focusing on one class, finish it then go to the next one
+ This is very important when working on a program incrementally focusing on one class, finishing it then going to the next one
 
  It's best to think about your program in terms of interface and implementation
 
@@ -27,27 +27,27 @@
 
 - is relationship
 
- Inheritance is the principle when one object acquires all the properties and behaviours of a parent object
+ Inheritance is the principle when one object acquires all the properties and behaviors of a parent object
  The subclass inherits properties and methods from its parent superclass. It provides code reusability.
 
  Types of inheritance:
 
 - Single inheritance, subclasses inherit the feature of one superclass
-- <img src="./images/single_inheritance.png"  width="200"/>
+<img src="./images/single_inheritance.png"  width="200"/>
 - Multilevel inheritance, a derived class will be inheriting a base class and as well as the derived class act as the base class to other class
-- <img src="./images/multilevel_inheritance.png" width="200"/>
+<img src="./images/multilevel_inheritance.png" width="200"/>
 - Hierarchical inheritance, one class serves as a superclass (base class) for more than one class
-- <img src="./images/hierarchical_inheritance.png" width="200"/>
+<img src="./images/hierarchical_inheritance.png" width="200"/>
 - Multiple inheritance, one class can have more than one superclass and inherit features from all parent classes. We can achieve this through interfaces
-- <img src="./images/multiple_inheritance.png" width="200"/>
+<img src="./images/multiple_inheritance.png" width="200"/>
 - Hybrid inheritance (through interfaces)
-- <img src="./images/hybrid_inheritance.png" width="200"/>
+<img src="./images/hybrid_inheritance.png" width="200"/>
 
 ## Polymorphism
 
  One task performs in different ways. It achieves by method overriding or method overloading depending on the language
 
- Method overriding - only unique methods names are allowed
+ Method overriding - only unique method names are allowed
  Method overloading - multiple methods with the same name but different arguments
 
  Dynamic polymorphism occurs during runtime
@@ -96,7 +96,7 @@ Represents the relationship between the objects. Here an object can be associate
 
 - independent. e.g. airplanes at an airport
 
-Is a way to achieve Association. It represents the relationship where one object contains other object as a part of its state. It represents weak relationship between objects
+Is a way to achieve Association. It represents the relationship where one object contains another object as a part of its state. It represents a weak relationship between objects
 
 ## Composition
 

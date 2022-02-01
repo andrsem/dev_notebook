@@ -1,8 +1,8 @@
 # Design Principles
 
-Software design is the most important phase of the software development life cycle. Thinking about how to structure code before you start writing it as critical
+Software design is the most important phase of the software development life cycle. Thinking about how to structure code before you start writing it is critical
 
-Changes and updates always happen when creating software. The cost of this changes are determined based on the structure and architecture of the system.
+Changes and updates always happen when creating software. The cost of these changes is determined based on the structure and architecture of the system.
 
 - the more time you put into designing a resilient and flexible architecture, the more time will save in the future when changes arise
 - good design, plans and makes it easier to add new features and handle changing requirements
@@ -57,13 +57,13 @@ An overridden method of a subclass needs to accept the same input parameter valu
 Clients should not be forced to depend upon interfaces that they do not use
 
 - a client should not implement an interface if it doesn't use a method in that interface
-- happens mostly when an interface contains more than one functionality, and the client needs only one functionality and not the other
+- happens mostly when an interface contains more than one functionality, and the client needs only one function and not the other
 
 The goal of the ISP is to reduce the side effects and frequency of required changes by splitting the software into multiple, independent parts. Design an interface based on clients needs
 
 ### Dependency Inversion Principle
 
-The goal is to reduce dependencies on concrete class. Depend on abstractions
+The goal is to reduce dependencies on concrete classes. Depend on abstractions
 
 - entities must depend on abstractions and not on concretions
 - abstractions should not depend upon details
@@ -73,7 +73,7 @@ The goal is to reduce dependencies on concrete class. Depend on abstractions
 
 ## KISS Keep It Simple, Stupid
 
-Most systems work best when they are kept simple rather than making them complex. So when you are writing code your solution should not be complicated that makes a lot of time and effort to understand. If your code is simple to other developers. So always try to simplify your code using different approaches like breaking complex problem into smaller chunks or takin out some unnecessary code you have written
+Most systems work best when they are kept simple rather than making them complex. So when you are writing code your solution should not be complicated which makes a lot of time and effort to understand. If your code is simple to other developers. So always try to simplify your code using different approaches like breaking a complex problem into smaller chunks or taking out some unnecessary code you have written
 
 ## DRY Don't Repeat Yourself
 
@@ -81,34 +81,34 @@ The goal is to reduce the repetition of code. It states that a piece of code sho
 
 ## YAGNI You Aren’t Gonna Need It
 
-Don't implement something until its necessary. Because in most of the cases you are not going to use that piece of code in future. Avoid this and save a lot of time and effort
+Don't implement something until it's necessary. Because in most cases you are not going to use that piece of code in the future. Avoid this and save a lot of time and effort
 
 ## SoC Separation of Concerns
 
-Partition a complicated application into different sections or domains. Each section or domain addresses separate concern or has a specific job. Each section is independent of each other - it becomes easier to maintain, update and reuse code
+Partition a complicated application into different sections or domains. Each section or domain addresses a separate concern or has a specific job. Each section is independent of each other - it becomes easier to maintain, update and reuse code
 
 ## Avoid Premature Optimisation
 
-You don't need to optimize an algorithm at early stage of development. Requirements may change and possibly this optimised algorithm is no longer needed
+You don't need to optimize an algorithm at an early stage of development. Requirements may change and possibly this optimized algorithm is no longer needed
 
 ## Law of Demeter
 
-Also known as principle of leas knowledge. This principle divides the responsibility between classes or different units
+Also known as the principle of least knowledge. This principle divides the responsibility between classes or different units
 
-- each unit should have only limited knowledge about others units: only units "closely" related to the current unit
+- each unit should have only limited knowledge about other units: only units "closely" related to the current unit
 - each unit should only talk to its friends. Don't talk to strangers
 - only talk to your immediate friends
 
 ## Composition Over Inheritance
 
-Objects with complex behaviours should contain instances of objects with individual behaviors. They should not inherit a class and add new behaviours
+Objects with complex behaviors should contain instances of objects with individual behaviors. They should not inherit a class and add new behaviors
 
 Issues with [inheritance](fundamental_oop_concepts.md#inheritance):
 
 - inheritance hierarchy can get messy in a hurry
-- less flexible for defining special-case behaviours
+- less flexible for defining special-case behaviors
 
-Composition programming is cleaner to write, easier to maintain and allows for flexibility defining behaviour
+Composition programming is cleaner to write, easier to maintain, and allows for flexibility in defining behavior
 
 ## Programming to an Interface
 
@@ -130,11 +130,11 @@ The client is not aware of the injector
 
 The injector passes the services to the client. Services might exist or be constructed by the injector itself
 
-This means the client doesn't need to know about the injector, how to construct the services or even which services it is actually using
+This means the client doesn't need to know about the injector, how to construct the services, or even which services it is using
 
 The client only needs to know the interfaces of the services
 
-- if class creates an instance of another class it cannot be used and tested  independently from this class. This is called __hard dependency__
+- if a class creates an instance of another class it cannot be used and tested independently from this class. This is called __hard dependency__
 
 ## Service Locators
 
@@ -143,4 +143,4 @@ It's a way to decouple the interface (abstract base class) from a concrete imple
 ## Code Smells
 
 //TODO watch java design patterns
-//TODO watch linkedin code smells course
+//TODO watch LinkedIn code smells course

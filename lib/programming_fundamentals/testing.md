@@ -10,11 +10,11 @@ Tests should be fast-running. A whole suite of unit tests should take seconds to
 
 ### Independent
 
-Tests should not be dependent on each other. One test should not set conditions for the next. You team members should be able to run each test independently and in any order. When tests depend on each other, the first one to fail causes a cascade of downstream failures
+Tests should not be dependent on each other. One test should not set conditions for the next. Your team members should be able to run each test independently and in any order. When tests depend on each other, the first one to fail causes a cascade of downstream failures
 
 ### Repeatable
 
-Tests should be repeatable in any environment. If unit tests pass when running one-by-one but fail when running the whole test suite, or if they pass on your development machine but fail on the CI server, there's a design flaw. Your team should be able to successfully run the tests on the production environment, QA environment and development environment
+Tests should be repeatable in any environment. If unit tests pass when running one-by-one but fail when running the whole test suite, or if they pass on your development machine but fail on the CI server, there's a design flaw. Your team should be able to successfully run the tests on the production environment, QA environment, and development environment
 
 ### Self-Validating
 
@@ -30,11 +30,11 @@ Unit tests should be written in a timely manner - before or at the same time as 
 
 Being maintainable means that unit test code is considered just as important as production code. If you want your team's production code to be easy to maintain, you must keep your unit tests easy to maintain as well
 
-A properly written test should allow a reader to quickly understand the logic/intention of the test and jump to the erroneous production code immediately. A good unit test is short, structured, simple and makes the development process faster
+A properly written test should allow a reader to quickly understand the logic/intention of the test and jump to the erroneous production code immediately. A good unit test is short, structured, simple, and makes the development process faster
 
 ### Isolated
 
-A good unit test should be isolated from any external dependency (e.g., database, file system, environment settings, network). When you involve these external systems, your unit tests can fail for environmental reason that have nothing to do with your production code
+A good unit test should be isolated from any external dependency (e.g., database, file system, environment settings, network). When you involve these external systems, your unit tests can fail for the environmental reason that has nothing to do with your production code
 
 ### Properly Targeted
 
@@ -63,4 +63,4 @@ To maximize the efficiency of unit testing, your team should write only the test
 - regression testing - ensures that changes haven't broken existing functionality
 - UI testing - replicates how a user interacts with an application and checks all the system layers
 - performance testing - determines how a system performs under a particular workload
-- API testing - checks the functionality, reliability, performance and security of APIs
+- API testing - checks the functionality, reliability, performance, and security of APIs
