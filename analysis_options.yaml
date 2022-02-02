@@ -1,7 +1,4 @@
 include: package:flutter_linter/strict.yaml
-analyzer:
-  exclude:
-    - lib/utilities/default_data.dart
 
 linter:
   rules:
