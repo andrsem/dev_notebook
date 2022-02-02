@@ -52,10 +52,34 @@ Source code is sent to the user which executes it with an interpreter program on
 
 ### Pure JIT
 
-JIT compilation (Just In Time) is a Hybrid between normal compilation (AOT ahead of time) and interpretation. Compilation takes place as the program is running source code is converted on the fly to machine code.
+JIT compilation (Just In Time) is a Hybrid between normal compilation (AOT ahead of time) and interpretation. Compilation takes place as the program is running. Source code is converted on the fly to machine code.
 
 ### Intermediate representation
 
 1. Compile to intermediate language IL or bytecode
 2. Send to client
 3. Client perform JIT compilation or run bytecode directly
+
+## Dart specific
+
+Dart's compiler technology lets you run code in different ways:
+
+- __Native platform__: for apps targeting mobile and desktop devices. Dart includes Dart VM with JIT compilation and AOT compiler for producing machine code
+- __Web platform__: for apps targeting web. Dart includes both development time compiler (dartdevc) and production time compiler (dart2js). Both compilers translate Dart into JavaScript
+
+As a summary for both Native and Web platforms, we have a development and production toolchain.
+
+- The development toolchain offers fast incremental development and stateful hot reload.
+- The production toolchain offers the fastest native output and smallest runtime
+
+### Dart runtime
+
+Runtime describes software/instructions that are executed while your program is running, especially those instructions that you did not write explicitly but are necessary for the proper execution of your code. Low-level languages like C have very small if any runtime.
+
+Regardless of which platform you use or how you compile your code, executing the code requires a Dart runtime. Dart’s runtime is ever-present, both in debug and release modes. This runtime is responsible for the following critical tasks:
+
+- Memory management. Dart's runtime includes a garbage collector for allocating and deallocating memory
+- Enforcing Dart type system. Most type checks in Dart are static (compile-time), but some are dynamic (runtime) like by using the cast operator
+- Managing isolates. The Dart runtime controls the main isolate (where code normally runs) and any other isolates that the app creates
+
+On native platforms, the Dart runtime is automatically included inside self-contained executables and is part of the Dart VM provided by the _dart run_ command
