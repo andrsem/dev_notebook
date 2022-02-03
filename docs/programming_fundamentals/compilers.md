@@ -83,3 +83,48 @@ Regardless of which platform you use or how you compile your code, executing the
 - Managing isolates. The Dart runtime controls the main isolate (where code normally runs) and any other isolates that the app creates
 
 On native platforms, the Dart runtime is automatically included inside self-contained executables and is part of the Dart VM provided by the _dart run_ command
+
+### Dart VM
+
+[Introduction to Dart VM](https://mrale.ph/dartvm/)
+[Dart docs](https://dart.dev/tools/dart-compile)
+
+Dart VM is a collection of components for executing Dart code natively.
+
+- Runtime system. With garbage collection
+- Core libraries native methods. (Probably written in C++)
+- Development experience components. Debugging, profiling, hot-reload
+- JIT and AOT compilation pipelines
+- Interpreter
+- ARM simulators
+
+Dart VM is a virtual machine in the sense that it provides an execution environment for a high-level programming language, however, it does not imply that Dart is always interpreted or JIT-compiled when executing on Dart VM. For example, Dart code can be compiled into machine code using Dart VM AOT pipeline and then executed within a stripped version of the Dart VM, called __precompiled runtime__, which does not contain any compiler components and is incapable of loading Dart source code dynamically.
+
+#### Dart VM can execute apps in 2 ways
+
+- From source by using JIT/AOT compiler
+- From snapshot (jit, aot, kernel snapshots)
+
+##### Execution from source
+
+###### With JIT compiler
+
+1. Source
+2. Common Front End (CFE)
+3. Kernel binary (.dill file) - intermediary language (IL)
+4. Dart VM. Optimization on the go during runtime
+
+###### With AOT compiler
+
+1. Source
+2. Common Front End (CFE)
+3. Kernel binary (.dill file) - intermediary language (IL)
+4. Type flow analysis
+5. Optimized kernel binary (.dill file) - intermediary language (IL)
+6. Dart VM. Optimization is done before runtime
+
+##### Execution from snapshot
+
+- Kernel snapshot is a portable, intermediate representation of the source code. Requires dart VM to compile it
+- AOT snapshot is an architecture-specific file containing the source code compiled to machine code, but no Dart runtime
+- JIT snapshot is an architecture-specific file with an intermediate representation of all source code, plus an optimized representation of the source code that is executed during a training run of the program. JIT-compiled code can have faster peak performance than AOT code if the training data is good.
