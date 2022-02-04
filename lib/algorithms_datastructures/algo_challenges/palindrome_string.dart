@@ -1,25 +1,12 @@
-// --- Directions
-// Given a string, return true if the string is a palindrome
-// or false if it is not.  Palindromes are strings that
-// form the same word if it is reversed. *Do* include spaces
-// and punctuation in determining if the string is a palindrome.
-// --- Examples:
-//   palindrome("abba") === true
-//   palindrome("abcdefg") === false
+import 'package:test/test.dart';
 
-void main() {
-  palindrome3('abba');
-}
-
-// Solution 1
-bool palindrome3(String str) {
+bool isPalindromeFirstSolution(String str) {
   final String reversedStr =
       str.split('').reduce((current, next) => next + current);
   return str == reversedStr;
 }
 
-// Solution 2
-bool palindrome(String str) {
+bool isPalindromeSecondSolution(String str) {
   bool isPalindrome = false;
   for (var i = 0; i < str.length; i++) {
     final lastChar = str[str.length - 1 - i];
@@ -33,4 +20,23 @@ bool palindrome(String str) {
     }
   }
   return isPalindrome;
+}
+
+void main() {
+  const palindroms = ['aba', '1000000001', 'pennep', 'a'];
+  const notPalindroms = [' aba', 'aba ', 'greetings', 'Fish hsif'];
+
+  for (final element in palindroms) {
+    test('"$element" is a palindrome', () {
+      expect(isPalindromeFirstSolution(element), true);
+      expect(isPalindromeSecondSolution(element), true);
+    });
+  }
+
+  for (final element in notPalindroms) {
+    test('"$element" is not a palindrome', () {
+      expect(isPalindromeFirstSolution(element), false);
+      expect(isPalindromeSecondSolution(element), false);
+    });
+  }
 }

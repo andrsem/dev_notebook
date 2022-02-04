@@ -1,11 +1,5 @@
-// --- Directions
-// Given an integer, return true if the integer is a palindrome
-// or false if it is not.
-// --- Examples
-//   palindrome(1221) === true
-//   palindrome(3452) === false
+import 'package:test/test.dart';
 
-// Solution 1
 bool isPalindromeInteger(int number) {
   int n = number;
   int rev = 0;
@@ -23,4 +17,21 @@ bool isPalindromeInteger(int number) {
   }
 
   return isPalindrome;
+}
+
+void main() {
+  const palindroms = [12321, 1];
+  const notPalindroms = [1232, 911];
+
+  for (final number in palindroms) {
+    test('$number is a palindrome', () {
+      expect(isPalindromeInteger(number), true);
+    });
+  }
+
+  for (final number in notPalindroms) {
+    test('$number is not palindrome', () {
+      expect(isPalindromeInteger(number), false);
+    });
+  }
 }

@@ -1,4 +1,4 @@
-// spread operator in collections adds elements of collection in new collection, it is like collection extracts its values and then add them to new collection
+// spread operator in collections adds elements of collection in a new collection, it is like collection extracts its values and then add them to new collection
 void main() {
   const bananas = 5;
   const apples = 6;
@@ -13,8 +13,7 @@ void main() {
     if (addGrains) ...grains
   };
 
-  print(shoppingList);
-  // prints {bananas: 5, apples: 6, pasta: 500g, rice: 1kg}
+  print(shoppingList); // prints {bananas: 5, apples: 6, pasta: 500g, rice: 1kg}
 }
 
 final colors = [
@@ -23,7 +22,7 @@ final colors = [
   ...['red', 'brown'],
 ];
 
-// here use if collection to add some fields using spread operator if certain condition is met
+//  use if collection to add some fields using spread operator if certain condition is met
 const ratings = [4.0, 4.5, 3.5];
 final restaurant = <String, dynamic>{
   'name': 'Pizza Buena',

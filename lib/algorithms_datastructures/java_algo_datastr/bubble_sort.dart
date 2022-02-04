@@ -1,4 +1,3 @@
-// bubble sort
 void main() {
   final array = [20, 35, -15, 7, 55, 1, -22];
   for (var lastUnsortedIndex = array.length - 1;

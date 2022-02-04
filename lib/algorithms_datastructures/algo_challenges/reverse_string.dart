@@ -1,16 +1,6 @@
-// --- Directions
-// Given a string, return a new string with the reversed
-// order of characters
-// --- Examples
-//   reverse('apple') === 'leppa'
-//   reverse('world') === 'dlrow'
+import 'package:test/test.dart';
 
-void main() {
-  reverse('world');
-}
-
-// Solution 1
-String reverse(String str) {
+String reverse1(String str) {
   final list = <String>[];
   for (var i = 0; i < str.length; i++) {
     list.add(str[i]);
@@ -18,10 +8,8 @@ String reverse(String str) {
   return list.reversed.join();
 }
 
-// Solution 2
 String reverse2(String str) => str.split('').reversed.join();
 
-// Solution 3
 String reverse3(String str) {
   String reversedString = '';
   for (var i = 0; i < str.length; i++) {
@@ -30,5 +18,20 @@ String reverse3(String str) {
   return reversedString;
 }
 
-// Solution 4
 String reverse4(String str) => str.split('').reduce((rev, char) => char + rev);
+
+void main() {
+  test('String "abcd" reverses a string "dcba"', () {
+    expect(reverse1('abcd'), 'dcba');
+    expect(reverse2('abcd'), 'dcba');
+    expect(reverse3('abcd'), 'dcba');
+    expect(reverse4('abcd'), 'dcba');
+  });
+
+  test('String "  abcd" reverses a string "dcba  "', () {
+    expect(reverse1('  abcd'), 'dcba  ');
+    expect(reverse2('  abcd'), 'dcba  ');
+    expect(reverse3('  abcd'), 'dcba  ');
+    expect(reverse4('  abcd'), 'dcba  ');
+  });
+}
