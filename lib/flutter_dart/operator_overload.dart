@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
 
+// more about operator overloading. https://freecontent.manning.com/wp-content/uploads/operator-overloading.pdf
+
 class Point extends Equatable {
   const Point(this.x, this.y);
   final int x;
@@ -21,9 +23,7 @@ class Point extends Equatable {
 
 void main() {
   // make this compile by overriding the + operator
-  print(const Point(1, 1) == const Point(1, 1)); // should print: Point(3, 1)
+  print(const Point(1, 1) + const Point(2, 0));
   // make this compile by overriding the * operator
-  print(const Point(2, 1) * 5); // should print: Point(10, 5)
   print(const Point(2, 1) * 5);
-  print(const Point(1, 2));
 }
