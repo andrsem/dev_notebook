@@ -1,6 +1,6 @@
 # Command Line Cheat Sheet
 
-## Show visited directories
+Show visited directories
 
 ```console
 dirs -v
