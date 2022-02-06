@@ -1,4 +1,4 @@
-# Render Trees, BuildContext
+# Rendering and BuildContext
 
 ## BuildContext
 
@@ -10,7 +10,9 @@ BuildContext of a widget represents the widget's location in Flutter's widget tr
 
 The relationship between BuildContext is a bottom-up relationship. Widgets context only knows about direct parent context. The only way BuildContext navigate between each other is up, from child to parent.
 
-## Render Trees
+## Rendering
+
+[The Layer Cake article](https://medium.com/flutter-community/the-layer-cake-widgets-elements-renderobjects-7644c3142401)
 
 ### When the `runApp()` is called for the first time
 
@@ -25,11 +27,21 @@ The relationship between BuildContext is a bottom-up relationship. Widgets conte
 
 - __Widget__. Widgets are immutable. They represent the configuration for RenderObjects. Flutter can easily create and destroy widgets without any significant performance degradation.
 - __Element__. Elements are the middleman between Widgets and RenderObjects. As the configuration of the Widget changes, the Element looks at the incoming changes and request the associated RenderObject to update
-- __Render__. RenderObjects are mutable objects. They turn the configuration supplied by Widgets into pixels users can see and interact with. Creating and destroying RenderObjects has an impact on performance. When the configuration of Widget changes, the framework updates the associated RenderObject instead of creating a new one.
+- __Render__. RenderObjects are mutable objects. They turn the configuration supplied by Widgets into pixels users can see and interact with. They take care of the layout, painting, and hit_testing. Creating and destroying RenderObjects has an impact on performance. When the configuration of Widget changes, the framework updates the associated RenderObject instead of creating a new one.
 
-"BuildContext context" of a builds method represents the element of the widget.
+"BuildContext context" of a builds method represents the Element of the widget. That’s why context is different for every single widget.
 
 Because Widgets are immutable they can't remember their parent or child relationship with other widgets. After widgets are built they are held by the Element tree, which retains the logical structure of the user interface. The Element tree also holds the state objects associated with StatefulWidgets.
+
+### Rebuilding
+
+With every configuration change, the Widget tree needs to be rebuilt.
+
+1. A rebuild will be triggered by the framework, which will recreate the whole widget tree.
+2. With the help of Elements in Elements tree, Flutter will compare the first item in the new Widget tree with the first item in the Render tree, second with second, and so on
+3. Flutter checks if the old and new widgets are the same type
+    - __if false__ remove the Widget, the Element, and the RenderObject from the tree (including subtrees) __and__ create new objects
+    - __if true__ just update the configuration of the RenderObject to represent the new configuration of the widget __and__ continue traveling down the tree
 
 ## Categories of Widgets
 
