@@ -9,7 +9,7 @@ BuildContext of a widget represents the underlying `Element` for the widget. Tha
 
 The `context` provided by the builder will become the __parent__ of the widget. Every widget has its own context and subtree.
 
-`runApp()` function requires a widget. This widget is the root widget of all widgets. In flutter, every widget has a build function that requires a BuildContext instance. Some widgets though have anonymous context.
+`runApp()` function requires a widget. This widget is the root widget of all widgets. The framework forces the root widget to cover the screen. In flutter, every widget has a build function that requires a BuildContext instance. Some widgets though have anonymous context.
 
 The relationship between BuildContext is a bottom-up relationship. Widgets context only knows about direct parent context. The only way BuildContext navigate between each other is up, from child to parent.
 
