@@ -11,6 +11,14 @@ Regression - something was working and after some time someone changed something
 
 ## SOLID Principles
 
+- __Single Responsibility Principle SRP__ - every class should have responsibility for a single part of the functionality provided by the software
+- __Open Closed Principle__ - classes and methods should be open for extension and closed for modification
+- __Liskov Substitution Principle LSP__ - objects of a superclass can be replaceable with objects of its subclasses without breaking the application. 
+- __Interface Segregation Principle ISP__ - clients should not be forced to depend upon interfaces that they do not use
+- __Dependency Inversion Principle__ - the goal is to reduce dependencies on concrete classes. Depend on abstractions
+
+## SOLID Principles TL;DR
+
 ### Single Responsibility Principle SRP
 
 - cohesion
