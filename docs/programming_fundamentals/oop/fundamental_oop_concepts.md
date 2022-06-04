@@ -73,7 +73,7 @@ Two classes or methods are closely connected. A change in one module may affect 
 
 ## Cohesion
 
-Refers to what the class or method can do
+Refers to how focused class or method is
 
 ### Low cohesion
 
